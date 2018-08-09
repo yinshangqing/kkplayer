@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NetPageView</class>
+ <widget class="QWidget" name="NetPageView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1043</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NetPageView</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="20">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="NetInactivePageView" name="InactivePage"/>
+     <widget class="NetActivePageView" name="ActivePage"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>NetInactivePageView</class>
+   <extends>QWidget</extends>
+   <header>netinactivepageview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NetActivePageView</class>
+   <extends>QWidget</extends>
+   <header>netactivepageview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
